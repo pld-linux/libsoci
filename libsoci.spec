@@ -57,7 +57,7 @@ Statyczna biblioteka soci.
 Summary:	Firebird backend for soci
 Summary(pl):	Backend Firebirda dla soci
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description firebird
 This package contains library with the Firebird binding for soci.
@@ -69,7 +69,7 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy Firebird z soci.
 Summary:	Firebird backend for soci (static version)
 Summary(pl):	Backend Firebirda dla soci (wersja statyczna)
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description firebird-static
 This package contains static library with the Firebird binding for
@@ -83,7 +83,7 @@ soci.
 Summary:	MySQL backend for soci
 Summary(pl):	Backend MySQL-a dla soci
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description mysql
 This package contains library with the MySQL binding for soci.
@@ -95,7 +95,7 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy MySQL z soci.
 Summary:	MySQL backend for soci (static version)
 Summary(pl):	Backend MySQL-a dla soci (wersja statyczna)
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description mysql-static
 This package contains static library with the MySQL binding for soci.
@@ -108,7 +108,7 @@ soci.
 Summary:	Oracle backend for soci
 Summary(pl):	Backend Oracla dla soci
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description oracle
 This package contains library with the Oracle binding for soci.
@@ -120,7 +120,7 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy Oracle z soci.
 Summary:	Oracle backend for soci (static version)
 Summary(pl):	Backend Oracla dla soci (wersja statyczna)
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description oracle-static
 This package contains static library with the Oracle binding for soci.
@@ -133,7 +133,7 @@ soci.
 Summary:	PostgreSQL backend for soci
 Summary(pl):	Backend PostgreSQL-a dla soci
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description postgresql
 This package contains library with the PostgreSQL binding for soci.
@@ -145,7 +145,7 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy PostgreSQL z soci.
 Summary:	PostgreSQL backend for soci (static version)
 Summary(pl):	Backend PostgreSQL-a dla soci (wersja statyczna)
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description postgresql-static
 This package contains static library with the PostgreSQL binding for
@@ -159,7 +159,7 @@ soci.
 Summary:	sqlite3 backend for soci
 Summary(pl):	Backend sqlite3 dla soci
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description sqlite3
 This package contains library with the sqlite3 binding for soci.
@@ -171,7 +171,7 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy sqlite3 z soci.
 Summary:	sqlite3 backend for soci (static version)
 Summary(pl):	Backend sqlite3-a dla soci (wersja statyczna)
 Group:		Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description sqlite3-static
 This package contains static library with the sqlite3 binding for
