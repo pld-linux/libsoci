@@ -5,7 +5,7 @@
 %bcond_without	mysql		# don't build MySQL backend
 %bcond_without	postgresql	# don't build PostgreSQL backend
 %bcond_without	sqlite3		# don't build sqlite3 backend
-
+#
 Summary:	The C++ Database Access Library
 Summary(pl):	Biblioteka obs³ugi baz danych dla C++
 Name:		libsoci
@@ -72,10 +72,12 @@ Group:		Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 %description firebird-static
-This package contains static library with the Firebird binding for soci.
+This package contains static library with the Firebird binding for
+soci.
 
 %description firebird-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy Firebird z soci.
+Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy Firebird z
+soci.
 
 %package mysql
 Summary:	MySQL backend for soci
@@ -99,7 +101,8 @@ Requires:	%{name} = %{epoch}:%{version}-%{release}
 This package contains static library with the MySQL binding for soci.
 
 %description mysql-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy MySQL z soci.
+Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy MySQL z
+soci.
 
 %package oracle
 Summary:	Oracle backend for soci
@@ -123,7 +126,8 @@ Requires:	%{name} = %{epoch}:%{version}-%{release}
 This package contains static library with the Oracle binding for soci.
 
 %description oracle-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy Oracle z soci.
+Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy Oracle z
+soci.
 
 %package postgresql
 Summary:	PostgreSQL backend for soci
@@ -144,10 +148,12 @@ Group:		Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 %description postgresql-static
-This package contains static library with the PostgreSQL binding for soci.
+This package contains static library with the PostgreSQL binding for
+soci.
 
 %description postgresql-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy PostgreSQL z soci.
+Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy PostgreSQL z
+soci.
 
 %package sqlite3
 Summary:	sqlite3 backend for soci
@@ -168,10 +174,12 @@ Group:		Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 %description sqlite3-static
-This package contains static library with the sqlite3 binding for soci.
+This package contains static library with the sqlite3 binding for
+soci.
 
 %description sqlite3-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy sqlite3 z soci.
+Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy sqlite3 z
+soci.
 
 %prep
 %setup -q -n soci-%{version}
