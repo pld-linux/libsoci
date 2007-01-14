@@ -34,6 +34,7 @@ Summary:	Header files for soci library
 Summary(pl):	Pliki nag³ówkowe biblioteki soci
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	libstdc++-devel
 
 %description devel
 Header files for soci library.
@@ -68,8 +69,8 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy Firebird z soci.
 %package firebird-static
 Summary:	Firebird backend for soci (static version)
 Summary(pl):	Backend Firebirda dla soci (wersja statyczna)
-Group:		Libraries
-Requires:	%{name} = %{version}-%{release}
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description firebird-static
 This package contains static library with the Firebird binding for
@@ -94,8 +95,8 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy MySQL z soci.
 %package mysql-static
 Summary:	MySQL backend for soci (static version)
 Summary(pl):	Backend MySQL-a dla soci (wersja statyczna)
-Group:		Libraries
-Requires:	%{name} = %{version}-%{release}
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description mysql-static
 This package contains static library with the MySQL binding for soci.
@@ -119,8 +120,8 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy Oracle z soci.
 %package oracle-static
 Summary:	Oracle backend for soci (static version)
 Summary(pl):	Backend Oracla dla soci (wersja statyczna)
-Group:		Libraries
-Requires:	%{name} = %{version}-%{release}
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description oracle-static
 This package contains static library with the Oracle binding for soci.
@@ -144,8 +145,8 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy PostgreSQL z soci.
 %package postgresql-static
 Summary:	PostgreSQL backend for soci (static version)
 Summary(pl):	Backend PostgreSQL-a dla soci (wersja statyczna)
-Group:		Libraries
-Requires:	%{name} = %{version}-%{release}
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description postgresql-static
 This package contains static library with the PostgreSQL binding for
@@ -170,8 +171,8 @@ Ten pakiet zawiera bibliotekê do po³±czenia bazy sqlite3 z soci.
 %package sqlite3-static
 Summary:	sqlite3 backend for soci (static version)
 Summary(pl):	Backend sqlite3-a dla soci (wersja statyczna)
-Group:		Libraries
-Requires:	%{name} = %{version}-%{release}
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description sqlite3-static
 This package contains static library with the sqlite3 binding for
