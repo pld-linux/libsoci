@@ -7,7 +7,7 @@
 %bcond_without	sqlite3		# don't build sqlite3 backend
 #
 Summary:	The C++ Database Access Library
-Summary(pl.UTF-8):   Biblioteka obsługi baz danych dla C++
+Summary(pl.UTF-8):	Biblioteka obsługi baz danych dla C++
 Name:		libsoci
 Version:	2.2.0
 Release:	0.1
@@ -31,7 +31,7 @@ Biblioteka obsługi baz danych dla języka C++.
 
 %package devel
 Summary:	Header files for soci library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki soci
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki soci
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -44,7 +44,7 @@ Pliki nagłówkowe biblioteki soci.
 
 %package static
 Summary:	Static soci library
-Summary(pl.UTF-8):   Statyczna biblioteka soci
+Summary(pl.UTF-8):	Statyczna biblioteka soci
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -56,7 +56,7 @@ Statyczna biblioteka soci.
 
 %package firebird
 Summary:	Firebird backend for soci
-Summary(pl.UTF-8):   Backend Firebirda dla soci
+Summary(pl.UTF-8):	Backend Firebirda dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -68,7 +68,7 @@ Ten pakiet zawiera bibliotekę do połączenia bazy Firebird z soci.
 
 %package firebird-static
 Summary:	Firebird backend for soci (static version)
-Summary(pl.UTF-8):   Backend Firebirda dla soci (wersja statyczna)
+Summary(pl.UTF-8):	Backend Firebirda dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -82,7 +82,7 @@ soci.
 
 %package mysql
 Summary:	MySQL backend for soci
-Summary(pl.UTF-8):   Backend MySQL-a dla soci
+Summary(pl.UTF-8):	Backend MySQL-a dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -94,7 +94,7 @@ Ten pakiet zawiera bibliotekę do połączenia bazy MySQL z soci.
 
 %package mysql-static
 Summary:	MySQL backend for soci (static version)
-Summary(pl.UTF-8):   Backend MySQL-a dla soci (wersja statyczna)
+Summary(pl.UTF-8):	Backend MySQL-a dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -107,7 +107,7 @@ soci.
 
 %package oracle
 Summary:	Oracle backend for soci
-Summary(pl.UTF-8):   Backend Oracla dla soci
+Summary(pl.UTF-8):	Backend Oracla dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -119,7 +119,7 @@ Ten pakiet zawiera bibliotekę do połączenia bazy Oracle z soci.
 
 %package oracle-static
 Summary:	Oracle backend for soci (static version)
-Summary(pl.UTF-8):   Backend Oracla dla soci (wersja statyczna)
+Summary(pl.UTF-8):	Backend Oracla dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -132,7 +132,7 @@ soci.
 
 %package postgresql
 Summary:	PostgreSQL backend for soci
-Summary(pl.UTF-8):   Backend PostgreSQL-a dla soci
+Summary(pl.UTF-8):	Backend PostgreSQL-a dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -144,7 +144,7 @@ Ten pakiet zawiera bibliotekę do połączenia bazy PostgreSQL z soci.
 
 %package postgresql-static
 Summary:	PostgreSQL backend for soci (static version)
-Summary(pl.UTF-8):   Backend PostgreSQL-a dla soci (wersja statyczna)
+Summary(pl.UTF-8):	Backend PostgreSQL-a dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -158,7 +158,7 @@ soci.
 
 %package sqlite3
 Summary:	sqlite3 backend for soci
-Summary(pl.UTF-8):   Backend sqlite3 dla soci
+Summary(pl.UTF-8):	Backend sqlite3 dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -170,7 +170,7 @@ Ten pakiet zawiera bibliotekę do połączenia bazy sqlite3 z soci.
 
 %package sqlite3-static
 Summary:	sqlite3 backend for soci (static version)
-Summary(pl.UTF-8):   Backend sqlite3-a dla soci (wersja statyczna)
+Summary(pl.UTF-8):	Backend sqlite3-a dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
