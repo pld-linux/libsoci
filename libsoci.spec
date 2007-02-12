@@ -7,7 +7,7 @@
 %bcond_without	sqlite3		# don't build sqlite3 backend
 #
 Summary:	The C++ Database Access Library
-Summary(pl):	Biblioteka obs³ugi baz danych dla C++
+Summary(pl.UTF-8):   Biblioteka obsÅ‚ugi baz danych dla C++
 Name:		libsoci
 Version:	2.2.0
 Release:	0.1
@@ -26,12 +26,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The C++ Database Access Library.
 
-%description -l pl
-Biblioteka obs³ugi baz danych dla jêzyka C++.
+%description -l pl.UTF-8
+Biblioteka obsÅ‚ugi baz danych dla jÄ™zyka C++.
 
 %package devel
 Summary:	Header files for soci library
-Summary(pl):	Pliki nag³ówkowe biblioteki soci
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki soci
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -39,36 +39,36 @@ Requires:	libstdc++-devel
 %description devel
 Header files for soci library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki soci.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki soci.
 
 %package static
 Summary:	Static soci library
-Summary(pl):	Statyczna biblioteka soci
+Summary(pl.UTF-8):   Statyczna biblioteka soci
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static soci library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka soci.
 
 %package firebird
 Summary:	Firebird backend for soci
-Summary(pl):	Backend Firebirda dla soci
+Summary(pl.UTF-8):   Backend Firebirda dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description firebird
 This package contains library with the Firebird binding for soci.
 
-%description firebird -l pl
-Ten pakiet zawiera bibliotekê do po³±czenia bazy Firebird z soci.
+%description firebird -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ do poÅ‚Ä…czenia bazy Firebird z soci.
 
 %package firebird-static
 Summary:	Firebird backend for soci (static version)
-Summary(pl):	Backend Firebirda dla soci (wersja statyczna)
+Summary(pl.UTF-8):   Backend Firebirda dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -76,75 +76,75 @@ Requires:	%{name}-devel = %{version}-%{release}
 This package contains static library with the Firebird binding for
 soci.
 
-%description firebird-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy Firebird z
+%description firebird-static -l pl.UTF-8
+Ten pakiet zawiera statycznÄ… bibliotekÄ™ do poÅ‚Ä…czenia bazy Firebird z
 soci.
 
 %package mysql
 Summary:	MySQL backend for soci
-Summary(pl):	Backend MySQL-a dla soci
+Summary(pl.UTF-8):   Backend MySQL-a dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description mysql
 This package contains library with the MySQL binding for soci.
 
-%description mysql -l pl
-Ten pakiet zawiera bibliotekê do po³±czenia bazy MySQL z soci.
+%description mysql -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ do poÅ‚Ä…czenia bazy MySQL z soci.
 
 %package mysql-static
 Summary:	MySQL backend for soci (static version)
-Summary(pl):	Backend MySQL-a dla soci (wersja statyczna)
+Summary(pl.UTF-8):   Backend MySQL-a dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description mysql-static
 This package contains static library with the MySQL binding for soci.
 
-%description mysql-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy MySQL z
+%description mysql-static -l pl.UTF-8
+Ten pakiet zawiera statycznÄ… bibliotekÄ™ do poÅ‚Ä…czenia bazy MySQL z
 soci.
 
 %package oracle
 Summary:	Oracle backend for soci
-Summary(pl):	Backend Oracla dla soci
+Summary(pl.UTF-8):   Backend Oracla dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description oracle
 This package contains library with the Oracle binding for soci.
 
-%description oracle -l pl
-Ten pakiet zawiera bibliotekê do po³±czenia bazy Oracle z soci.
+%description oracle -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ do poÅ‚Ä…czenia bazy Oracle z soci.
 
 %package oracle-static
 Summary:	Oracle backend for soci (static version)
-Summary(pl):	Backend Oracla dla soci (wersja statyczna)
+Summary(pl.UTF-8):   Backend Oracla dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description oracle-static
 This package contains static library with the Oracle binding for soci.
 
-%description oracle-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy Oracle z
+%description oracle-static -l pl.UTF-8
+Ten pakiet zawiera statycznÄ… bibliotekÄ™ do poÅ‚Ä…czenia bazy Oracle z
 soci.
 
 %package postgresql
 Summary:	PostgreSQL backend for soci
-Summary(pl):	Backend PostgreSQL-a dla soci
+Summary(pl.UTF-8):   Backend PostgreSQL-a dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description postgresql
 This package contains library with the PostgreSQL binding for soci.
 
-%description postgresql -l pl
-Ten pakiet zawiera bibliotekê do po³±czenia bazy PostgreSQL z soci.
+%description postgresql -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ do poÅ‚Ä…czenia bazy PostgreSQL z soci.
 
 %package postgresql-static
 Summary:	PostgreSQL backend for soci (static version)
-Summary(pl):	Backend PostgreSQL-a dla soci (wersja statyczna)
+Summary(pl.UTF-8):   Backend PostgreSQL-a dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -152,25 +152,25 @@ Requires:	%{name}-devel = %{version}-%{release}
 This package contains static library with the PostgreSQL binding for
 soci.
 
-%description postgresql-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy PostgreSQL z
+%description postgresql-static -l pl.UTF-8
+Ten pakiet zawiera statycznÄ… bibliotekÄ™ do poÅ‚Ä…czenia bazy PostgreSQL z
 soci.
 
 %package sqlite3
 Summary:	sqlite3 backend for soci
-Summary(pl):	Backend sqlite3 dla soci
+Summary(pl.UTF-8):   Backend sqlite3 dla soci
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description sqlite3
 This package contains library with the sqlite3 binding for soci.
 
-%description sqlite3 -l pl
-Ten pakiet zawiera bibliotekê do po³±czenia bazy sqlite3 z soci.
+%description sqlite3 -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ do poÅ‚Ä…czenia bazy sqlite3 z soci.
 
 %package sqlite3-static
 Summary:	sqlite3 backend for soci (static version)
-Summary(pl):	Backend sqlite3-a dla soci (wersja statyczna)
+Summary(pl.UTF-8):   Backend sqlite3-a dla soci (wersja statyczna)
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -178,8 +178,8 @@ Requires:	%{name}-devel = %{version}-%{release}
 This package contains static library with the sqlite3 binding for
 soci.
 
-%description sqlite3-static -l pl
-Ten pakiet zawiera statyczn± bibliotekê do po³±czenia bazy sqlite3 z
+%description sqlite3-static -l pl.UTF-8
+Ten pakiet zawiera statycznÄ… bibliotekÄ™ do poÅ‚Ä…czenia bazy sqlite3 z
 soci.
 
 %prep
