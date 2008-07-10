@@ -1,0 +1,31 @@
+--- soci-3.0.0/src/backends/mysql/common.h.org	2008-07-10 19:37:12.388879700 +0200
++++ soci-3.0.0/src/backends/mysql/common.h	2008-07-10 19:37:22.405876279 +0200
+@@ -9,6 +9,7 @@
+ #define SOCI_MYSQL_COMMON_H_INCLUDED
+ 
+ #include <sstream>
++#include <ctime>
+ #include "soci-mysql.h"
+ 
+ namespace soci
+--- soci-3.0.0/src/backends/mysql/session.cpp.org	2008-07-10 19:44:41.317881830 +0200
++++ soci-3.0.0/src/backends/mysql/session.cpp	2008-07-10 19:46:09.761878328 +0200
+@@ -10,6 +10,8 @@
+ #include "soci-mysql.h"
+ #include <cctype>
+ #include <cerrno>
++#include <climits>
++#include <cstdlib>
+ #include <ciso646>
+ 
+ 
+--- soci-3.0.0/src/backends/mysql/standard-into-type.cpp.org	2008-07-10 19:48:28.296879993 +0200
++++ soci-3.0.0/src/backends/mysql/standard-into-type.cpp	2008-07-10 19:49:06.593880673 +0200
+@@ -12,6 +12,7 @@
+ #include "common.h"
+ #include <ciso646>
+ #include <cassert>
++#include <cstring>
+ 
+ #ifdef _MSC_VER
+ #pragma warning(disable:4355)
