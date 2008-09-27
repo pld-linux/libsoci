@@ -143,7 +143,7 @@ soci.
 	--mysql-include=%{_includedir}/mysql \
 	--mysql-lib=%{_libdir}
 
-export CXXFLAGS="%{rpmcxxflags}"
+export CXXFLAGS="${CXXFLAGS:-%rpmcxxflags}"
 %{__make}
 
 %install
