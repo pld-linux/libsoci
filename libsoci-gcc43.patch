@@ -29,3 +29,34 @@
  
  #ifdef _MSC_VER
  #pragma warning(disable:4355)
+--- soci-3.0.0/src/core/soci-simple.cpp~	2008-07-01 09:42:25.000000000 +0200
++++ soci-3.0.0/src/core/soci-simple.cpp	2011-05-17 09:15:12.366747904 +0200
+@@ -7,6 +7,8 @@
+ 
+ #define SOCI_SOURCE
+ 
++#include <cstdio>
++
+ #include "soci-simple.h"
+ #include "soci.h"
+ 
+--- soci-3.0.0/src/backends/mysql/standard-use-type.cpp~	2008-05-15 15:58:38.000000000 +0200
++++ soci-3.0.0/src/backends/mysql/standard-use-type.cpp	2011-05-17 09:17:43.470359903 +0200
+@@ -13,6 +13,7 @@
+ #include <ciso646>
+ #include <limits>
+ #include <cstring>
++#include <cstdio>
+ 
+ #ifdef _MSC_VER
+ #pragma warning(disable:4355)
+--- soci-3.0.0/src/backends/mysql/vector-use-type.cpp~	2008-05-15 15:58:38.000000000 +0200
++++ soci-3.0.0/src/backends/mysql/vector-use-type.cpp	2011-05-17 09:19:24.358330530 +0200
+@@ -13,6 +13,7 @@
+ #include <ciso646>
+ #include <limits>
+ #include <cstring>
++#include <cstdio>
+ 
+ #ifdef _MSC_VER
+ #pragma warning(disable:4355)
