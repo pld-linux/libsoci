@@ -13,7 +13,7 @@ Summary:	The C++ Database Access Library
 Summary(pl.UTF-8):	Biblioteka obsługi baz danych dla C++
 Name:		libsoci
 Version:	3.2.3
-Release:	1
+Release:	2
 License:	Boost Software License
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/soci/soci-%{version}.tar.gz
@@ -231,7 +231,7 @@ Summary:	Header files for soci PostgreSQL backend
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki soci PostgreSQL
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
-Requires:	%{name}-posgresql = %{version}-%{release}
+Requires:	%{name}-postgresql = %{version}-%{release}
 
 %description postgresql-devel
 Header files for soci PostgreSQL backend.
