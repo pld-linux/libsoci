@@ -12,20 +12,21 @@
 Summary:	The C++ Database Access Library
 Summary(pl.UTF-8):	Biblioteka obsługi baz danych dla C++
 Name:		libsoci
-Version:	3.2.3
-Release:	3
+Version:	4.0.2
+Release:	1
 License:	Boost Software License
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/soci/soci-%{version}.tar.gz
-# Source0-md5:	acfbccf176cd20e06833a8037a2d3699
+# Source0-md5:	c35e654558e0c0b344960d5888e5d39e
 URL:		http://soci.sourceforge.net/
 %{?with_firebird:BuildRequires:	Firebird-devel}
 BuildRequires:	boost-devel
 BuildRequires:	cmake >= 2.8.0
-BuildRequires:	libstdc++-devel
+BuildRequires:	libstdc++-devel >= 1:4.7
 %{?with_mysql:BuildRequires:	mysql-devel}
 %{?with_oci:%{?with_instantclient:BuildRequires:	oracle-instantclient-devel >= 10}}
 %{?with_pgsql:BuildRequires:	postgresql-devel >= 7}
+BuildRequires:	rpm-build >= 4.6
 %{?with_sqlite3:BuildRequires:	sqlite3-devel >= 3}
 %{?with_odbc:BuildRequires:	unixODBC-devel}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -292,6 +293,18 @@ soci.
 Ten pakiet zawiera statyczną bibliotekę do połączenia bazy SQLite3 z
 soci.
 
+%package apidocs
+Summary:	Documentation for SOCI library
+Summary(pl.UTF-8):	Dokumentacja biblioteki SOCI
+Group:		Documentation
+BuildArch:	noarch
+
+%description apidocs
+Documentation for SOCI library.
+
+%description apidocs -l pl.UTF-8
+Dokumentacja biblioteki SOCI.
+
 %prep
 %setup -q -n soci-%{version}
 
@@ -317,6 +330,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} -C build install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# disable completeness check incompatible with split packaging
+%{__sed} -i -e '/^foreach(target .*IMPORT_CHECK_TARGETS/,/^endforeach/d; /^unset(_IMPORT_CHECK_TARGETS)/d' $RPM_BUILD_ROOT%{_libdir}/cmake/SOCI/SOCITargets.cmake
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -346,18 +362,18 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS CHANGES LICENSE_1_0.txt README.md
 %attr(755,root,root) %{_libdir}/libsoci_core.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_core.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_core.so.4.0
 %attr(755,root,root) %{_libdir}/libsoci_empty.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_empty.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_empty.so.4.0
 
 %files devel
 %defattr(644,root,root,755)
-%doc doc/*
 %attr(755,root,root) %{_libdir}/libsoci_core.so
 %attr(755,root,root) %{_libdir}/libsoci_empty.so
 %dir %{_includedir}/soci
 %{_includedir}/soci/*.h
 %{_includedir}/soci/empty
+%{_libdir}/cmake/SOCI
 
 %files static
 %defattr(644,root,root,755)
@@ -368,7 +384,7 @@ rm -rf $RPM_BUILD_ROOT
 %files firebird
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libsoci_firebird.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_firebird.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_firebird.so.4.0
 
 %files firebird-devel
 %defattr(644,root,root,755)
@@ -384,7 +400,7 @@ rm -rf $RPM_BUILD_ROOT
 %files mysql
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libsoci_mysql.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_mysql.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_mysql.so.4.0
 
 %files mysql-devel
 %defattr(644,root,root,755)
@@ -400,7 +416,7 @@ rm -rf $RPM_BUILD_ROOT
 %files odbc
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libsoci_odbc.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_odbc.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_odbc.so.4.0
 
 %files odbc-devel
 %defattr(644,root,root,755)
@@ -416,7 +432,7 @@ rm -rf $RPM_BUILD_ROOT
 %files oracle
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libsoci_oracle.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_oracle.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_oracle.so.4.0
 
 %files oracle-devel
 %defattr(644,root,root,755)
@@ -432,7 +448,7 @@ rm -rf $RPM_BUILD_ROOT
 %files postgresql
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libsoci_postgresql.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_postgresql.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_postgresql.so.4.0
 
 %files postgresql-devel
 %defattr(644,root,root,755)
@@ -448,7 +464,7 @@ rm -rf $RPM_BUILD_ROOT
 %files sqlite3
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libsoci_sqlite3.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libsoci_sqlite3.so.3.2
+%attr(755,root,root) %ghost %{_libdir}/libsoci_sqlite3.so.4.0
 
 %files sqlite3-devel
 %defattr(644,root,root,755)
@@ -459,3 +475,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_libdir}/libsoci_sqlite3.a
 %endif
+
+%files apidocs
+%defattr(644,root,root,755)
+%doc docs/*
