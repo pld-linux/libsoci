@@ -315,6 +315,7 @@ cd build
 %cmake .. \
 	-DLIBDIR:PATH=%{_lib} \
 	%{?with_instantclient:-DORACLE_INCLUDE_DIR=/usr/include/oracle/client} \
+	-DSOCI_CXX11=ON \
 	-DWITH_DB2=OFF \
 	%{!?with_firebird:-DWITH_FIREBIRD=OFF} \
 	%{!?with_mysql:-DWITH_MYSQL=OFF} \
