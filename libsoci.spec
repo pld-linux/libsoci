@@ -12,12 +12,12 @@
 Summary:	The C++ Database Access Library
 Summary(pl.UTF-8):	Biblioteka obsługi baz danych dla C++
 Name:		libsoci
-Version:	4.0.2
+Version:	4.0.3
 Release:	1
 License:	Boost Software License
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/soci/soci-%{version}.tar.gz
-# Source0-md5:	c35e654558e0c0b344960d5888e5d39e
+# Source0-md5:	7c6d5147ce10871e6a015a437c27de5c
 URL:		http://soci.sourceforge.net/
 %{?with_firebird:BuildRequires:	Firebird-devel}
 BuildRequires:	boost-devel
